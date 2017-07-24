@@ -1,12 +1,12 @@
 package practice2;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.SQLException;
 import java.util.Random;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -50,8 +50,6 @@ public class ResultServlet extends HttpServlet {
 
 			}
 
-
-
 			//繋ぐ
 			conn = DBManeger.getConnection();
 
@@ -79,11 +77,16 @@ public class ResultServlet extends HttpServlet {
 			}
 
 			//jsp表示用にキーにセット
-			request.setAttribute("result",resOmikuji.disp());
+			//request.setAttribute("result",resOmikuji.disp());
+
+			response.setContentType("text/plain; charset=UTF-8");
+
+			PrintWriter out = response.getWriter();
+			out.println(resOmikuji.disp());
 
 			//画面遷移
-			RequestDispatcher dispatcher = request.getRequestDispatcher("entry/result.jsp");
-			dispatcher.forward(request, response);
+			//	RequestDispatcher dispatcher = request.getRequestDispatcher("entry/result.jsp");
+			// dispatcher.forward(request, response);
 
 			// クローズ処理
 			if (conn != null){
@@ -97,10 +100,6 @@ public class ResultServlet extends HttpServlet {
 		}
 
 	}
-
-
-
-
 
 
 	/**

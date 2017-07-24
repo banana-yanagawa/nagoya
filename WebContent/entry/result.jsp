@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<!--<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -18,4 +18,4 @@ out.println(result);
 <p><a href="/practice2/entry/omikuji.jsp">占い画面に戻る</a></p>
 
 </body>
-</html>
+</html>-->
