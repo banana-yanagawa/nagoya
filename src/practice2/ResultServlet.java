@@ -78,36 +78,37 @@ public class ResultServlet extends HttpServlet {
 
 			}
 
+			//jsp表示用にキーにセット
 			request.setAttribute("result",resOmikuji.disp());
 
+			//画面遷移
 			RequestDispatcher dispatcher = request.getRequestDispatcher("entry/result.jsp");
-
 			dispatcher.forward(request, response);
 
 			// クローズ処理
 			if (conn != null){
 				conn.close();
 
-		}
+			}
 
 		} catch (SQLException e) {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
 
-}
+	}
 
 
 
 
 
 
-/**
- * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
- */
-protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	// TODO Auto-generated method stub
-	doGet(request, response);
-}
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
 
 }

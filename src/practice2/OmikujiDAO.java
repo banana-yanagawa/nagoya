@@ -63,6 +63,7 @@ public class OmikujiDAO {
 	}
 
 
+
 	/**
 	 * CSVファイルからおみくじ内容を読み込み、
 	 * おみくじテーブルに登録するためのメソッド
@@ -111,7 +112,7 @@ public class OmikujiDAO {
 		}
 
 		//終わったら閉じる
-		br.close();			
+		br.close();
 
 		//コミット
 		conn.commit();
@@ -122,7 +123,7 @@ public class OmikujiDAO {
 
 	/**
 	 * 入力された誕生日と今日の日付が同じなら同じ結果を返すための準備メソッド
-	 * 
+	 *
 	 * @param formatDate
 	 * @return omikuji
 	 * @throws SQLException
@@ -304,9 +305,9 @@ public class OmikujiDAO {
 
 
 	/**
-	 * 
+	 *
 	 * 運勢名を運勢コードに変換するためのメソッド
-	 * 
+	 *
 	 * @param kuji
 	 * @return unseiId
 	 */

@@ -15,7 +15,7 @@ out.println(result);
 
 %>
 
-<p><a href="/practice2/entry/omikuji.jsp">戻る</a></p>
+<p><a href="/practice2/entry/omikuji.jsp">占い画面に戻る</a></p>
 
 </body>
 </html>

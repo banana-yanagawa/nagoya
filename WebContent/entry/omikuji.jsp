@@ -8,7 +8,7 @@
 </head>
 <body>
 
-生年月日を入力してください（例：1995-03-25）
+生年月日を入力してください。（例：1995-03-25）
 
 <form action = "/practice2/Result" method = "post">
 <input type = "text" name = "birthday"/>

@@ -10,4 +10,5 @@ public abstract class OmikujiKind implements Fortune {
 	protected String akinai;
 	protected String gakumon;
 
+
 }

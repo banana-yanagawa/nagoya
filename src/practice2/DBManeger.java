@@ -30,7 +30,7 @@ public class DBManeger {
 
 
 		} catch (Exception ex) {
-			// 例外発生時の処理
+			// 例外処理
 			ex.printStackTrace();
 
 		}

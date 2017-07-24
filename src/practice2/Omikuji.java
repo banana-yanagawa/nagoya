@@ -65,7 +65,7 @@ public class Omikuji extends OmikujiKind {
 		//DISP_STRの%s部分に運勢をセット
 		String str = String.format(DISP_STR, unseiName);
 
-		//改行
+		//改行用
 		String sep = System.getProperty("line.separator");
 
 		sb.append(str);
